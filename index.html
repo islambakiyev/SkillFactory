@@ -20,7 +20,7 @@
             <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
           </ul>
         </nav>
-        <p class="phone">+7 (928) 768-32-39</p>
+        <p class="phone"><a href="tel:+79287683239">+7 (928) 768-32-39</a></p>
         <button class="button header-button">Request a call</button>
       </div>
     </header>
@@ -151,19 +151,23 @@
                 <label class="label" for="phone">Phone</label>
                 <input id="phone" class="input" type="text" required="" placeholder="Your phone number:">
               </div>
-			  <div class="checkbox-for-mobile">
-              <input type="checkbox" id="checkbox_1">
-              <label class="checkbox-text" for="checkbox_1">
-                I agree to the processing of personal data
+			  <div class="checkbox-for-mobile"> 
+              <label class="checkbox-text" for="checkbox_3">
+                <input type="checkbox" id="checkbox_3"  class="checkboxFake">
+                <span class="fake"></span>
+                <span class="textFake">I agree to the processing of personal data.</span>
               </label>
             </div>
               <button class="button">SUBMIT</button>
           </div>
             <div class="checkbox">
-              <input type="checkbox" id="checkbox_1">
-              <label class="checkbox-text" for="checkbox_1">
-                I agree to the processing of personal data
+              <label class="labelFake">
+                <input type="checkbox" class="checkboxFake">
+                <span class="fake"></span>
+                <span class="textFake">I agree to the processing of personal data.</span>
               </label>
+              
+
             </div>
           </form>
        
@@ -260,24 +264,30 @@
                    </div>
 
                    <div class="field-input field-input-margin">
-                    <label class="label label-request "for="name-request">Name</label>
-                    <input id="name-request" class="request-input"type="text" placeholder="What's your name?">
+                    <label class="label label-request "for="phone-request">Phone</label>
+                    <input id="phone-request" class="request-input"type="text" placeholder="Your phone number">
                   </div>
 
                   <div class="field-input field-input-margin">
-                    <label class="label label-request "for="name-request">Name</label>
-                    <input id="name-request" class="request-input"type="text" placeholder="What's your name?">
+                    <label class="label label-request "for="email-request">E-mail</label>
+                    <input id="email-request" class="request-input"type="text" placeholder="Your email">
                   </div>
 
-                  <div class="checkbox checkbox-request">
-                    <input type="checkbox" id="checkbox_2">
-                    <label class="checkbox-text checkbox-text-request" for="checkbox_2">
-                      I agree to the processing of personal data</label>
-                  </div>
-                  <button class="button button-request">
-                    Call the measurer
-                  </button>
               </div>
+
+              
+              <div class="first-checkbox checkbox-request">
+                <label class="labelFake">
+                  <input type="checkbox" class="checkboxFake" >
+                  <span class="fake"></span>
+                  <span class="checkbox-text-request">I agree to the processing of personal data.</span>
+                </label>
+              </div>
+
+
+              <button class="button button-request">
+                Call the measurer
+              </button>
             </form>
           </div>
           <div class="pig-ikonka">
@@ -453,10 +463,12 @@
                       <input class="input-contacts longInput" type="text" id="question-contacts" required="" placeholder="I want to know:">
                     </div>
 
-                    <div class="checkbox checkbox-contacts">
-                      <input type="checkbox" id="checkbox_3">
-                      <label class="checkbox-text checkbox-text-request" for="checkbox_3">
-                        I agree to the processing of personal data</label>
+                    <div class="first-checkbox checkbox-question">
+                      <label class="labelFake">
+                        <input type="checkbox" class="checkboxFake" >
+                        <span class="fake"></span>
+                        <span class="checkbox-text-request">I agree to the processing of personal data.</span>
+                      </label>
                     </div>
 
                     <button class="button contacts-button">
@@ -506,7 +518,7 @@
             <li class="header-navigation__item"><a href="#">CONTACTS</a></li>
           </ul>
         </nav>
-        <p class="phone">+7 (928) 768-32-39</p>
+        <p class="phone"><a href="tel:+79287683239">+7 (928) 768-32-39</a></p>
         <button class="button footer-button">Request a call</button>
       </div>
     </footer>

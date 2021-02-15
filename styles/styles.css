@@ -70,15 +70,22 @@ body * {
   color: #e3b873;
 }
 
+.phone a {
+  color: #e3b873;
+}
+
 .logo {
   color: #e3b873;
 }
 
 .header {
   background-color: black;
+  font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+  font-size: 11px;
 }
 
 .header-content {
+  max-width: 1263px;
   display: flex;
   justify-content: space-between;
   height: 83px;
@@ -404,8 +411,44 @@ body * {
   margin-top: 33px;
 }
 
+.textFake {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 163.68%;
+  color: #181818;
+}
+
+.labelFake {
+  cursor: pointer;
+}
+.checkboxFake {
+  display: none;
+}
+.fake {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  background: #e3b873;
+  color: #fff;
+  justify-content: center;
+}
+.fake::before {
+  content: "\2714";
+  opacity: 0;
+  transition: 0.2s;
+}
+.checkboxFake:checked + .fake::before {
+  opacity: 1;
+}
+
 .checkbox-request {
-  margin: -35px 0px 40px 32px;
+  margin: -35px 0px 40px 49px;
+}
+
+.checkbox-question {
+  margin: 15px 0px 10px 0px;
 }
 
 .checkbox-text {
@@ -527,6 +570,7 @@ body * {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .pluses-text {
@@ -539,6 +583,9 @@ body * {
 }
 
 .request-for-free-measurer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 49px;
   max-width: 506px;
   height: 509px;
   background: #131313;
@@ -869,7 +916,7 @@ body * {
   display: none;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1200px) {
   nav {
     display: none;
   }
@@ -884,12 +931,13 @@ body * {
 
   .hero {
     padding-top: 85px;
-    height: 476px;
+    height: 100%;
   }
 
   .button-calculate,
   .button-submit {
-    width: 338px;
+    width: 100%;
+    max-width: 338px;
     margin-left: 18px !important;
     margin-right: 18px;
     margin-top: 32px;
@@ -906,6 +954,10 @@ body * {
 
   .hero-container {
     padding-left: 18px;
+  }
+
+  .button {
+    margin-bottom: 15px;
   }
 
   .title {
@@ -935,6 +987,16 @@ body * {
     line-height: 138.6%;
     text-align: center;
     letter-spacing: -0.07em;
+  }
+
+  .properties {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .properties-item {
+    width: 100%;
+    text-align: center;
   }
 
   .project-text {
@@ -967,7 +1029,9 @@ body * {
   }
 
   .control {
-    height: 800px;
+    height: 100%;
+    margin-top: -100px;
+    background-color: #131313;
   }
 
   .video {
@@ -990,6 +1054,8 @@ body * {
     margin-right: 18px;
     font-size: 11px;
     line-height: 169.8%;
+    color: white;
+    max-width: 100%;
   }
 
   .field {
@@ -998,6 +1064,7 @@ body * {
 
   .form {
     margin-top: 10px;
+    align-items: center;
   }
 
   .field-input {
@@ -1013,8 +1080,20 @@ body * {
     margin-bottom: 15px;
   }
 
+  .label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
   .checkbox {
     display: none;
+  }
+
+  .textFake {
+    color: white;
+  }
+
+  .checkbox-text {
+    color: white;
   }
 
   .wildest-fantasies {
@@ -1052,9 +1131,16 @@ body * {
     height: 1680px;
   }
 
+  .repair-container {
+    width: auto;
+    margin-top: 15px;
+  }
+
   .repair-content {
+    display: flex;
     flex-direction: column;
     padding-bottom: unset;
+    align-items: center;
   }
 
   .repair-content-item {
@@ -1085,6 +1171,15 @@ body * {
 
   .footer-button {
     display: none;
+  }
+
+  .contacts {
+    height: 100%;
+  }
+
+  .contacts-form {
+    max-width: 100%;
+    height: 100%;
   }
 
   .contacts-namePhone {
