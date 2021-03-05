@@ -47,9 +47,9 @@
         <div class="container project-container">
 
           <ul class="project-list">
-            <li class="project-list-item">Rostov-on-Don, Admiral</li>
-            <li class="project-list-item">Sochi Thieves</li>
-            <li class="project-list-item">Rostov-on-Don Patriotic</li></ul>
+            <li class="project-list-item" value="0">Rostov-on-Don, Admiral</li>
+            <li class="project-list-item" value="1">Sochi Thieves</li>
+            <li class="project-list-item" value="2">Rostov-on-Don Patriotic</li></ul>
 
           <div class="content-container">
           
@@ -67,13 +67,13 @@
                   <div>                  
                     <div class="properties-item">
                     <h3 class="title title-projects title-projects-mobile item-title">City:</h3>
-                    <span class="subtitle project-text">Rostov-on-Don<br> LCD admiral</span>
+                    <span id ="properties-city" class="subtitle project-text">Rostov-on-Don<br> LCD admiral</span>
                      </div>
 
                                          
                   <div class="properties-item">
                     <h3 class="title title-projects title-projects-mobile item-title">Repair time:</h3>
-                    <span class="subtitle project-text">3.5 months</span>
+                    <span id="properties-time" class="subtitle project-text">3.5 months</span>
                     </div>
 
                   </div>
@@ -83,7 +83,7 @@
                   
                   <div class="properties-item">
                     <h3 class="title title-projects title-projects-mobile item-title">apartment area:</h3>
-                    <span class="subtitle project-text">81 m2</span>
+                    <span id="properties-size" class="subtitle project-text">81 m2</span>
                     </div>
 
 
@@ -99,7 +99,7 @@
             </div>
 
 
-              <img
+              <img 
               class="project-image"
               src="./images/property1.jpg"
               alt="First property"/> 
@@ -522,5 +522,9 @@
         <button class="button footer-button">Request a call</button>
       </div>
     </footer>
+
   </body>
+  
+  <script src="script.js"></script>
+  
 </html>
